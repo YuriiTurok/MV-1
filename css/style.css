@@ -43,6 +43,118 @@ ul, ol{
 
 /* ---------------------------- */
 
+.tell{
+  background-color: #0F1115;
+  padding: 128px 0;
+  position: relative;
+}
+
+.tell::after{
+  content: "";
+  position: absolute;
+  background-image: url("../assets/tell-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(30px);
+  height: 620px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tell__title{
+  position: relative;
+  z-index: 10;
+}
+
+/*.tell__inner{*/
+/*  position: relative;*/
+/*  z-index: 10;*/
+/*  margin-top: 48px;*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(auto-fill, minmax(372px, 1fr));*/
+/*  column-gap: 32px;*/
+/*  overflow: hidden;*/
+/*}*/
+
+/*.tell__inner{*/
+/*  position: relative;*/
+/*  z-index: 10;*/
+/*  margin-top: 48px;*/
+/*  display: flex;*/
+/*  gap: 32px;*/
+/*  overflow: hidden;*/
+/*}*/
+
+
+.tell__inner{
+  position: relative;
+  z-index: 10;
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 32px;
+  overflow: hidden;
+  padding-bottom: 48px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.10);
+}
+
+.tell__item{
+  /*width: 100%;*/
+  width: 372px;
+  padding: 32px;
+  border: 1px solid #7553F0;
+  border-radius: 32px;
+  background: rgba(117, 83, 240, 0.10);
+  backdrop-filter: blur(5px)
+}
+
+.tell__item-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tell__item-top-img{
+  width: 235px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+}
+
+.tell__item-top-arrow{
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 32px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+}
+
+.tell__item-text{
+  font-weight: 700;
+  line-height: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 20px;
+}
+
+.tell__line{
+  width: 431px;
+  height: 3px;
+  background: #7553F0;
+  position: absolute;
+  bottom: 128px;
+}
+
+
+/* -------------------------- */
+
 .our-team{
   background: #0F1115;
   padding: 128px 0;
