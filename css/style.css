@@ -1,0 +1,115 @@
+html{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #B0BBCB;
+}
+
+html,
+body{
+  height: 100%;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+.container{
+  max-width: 1210px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title{
+  color: #FFF;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 71.5px;
+  text-align: center;
+}
+
+/* ---------------------------- */
+
+.our-team{
+  background: #0F1115;
+  padding: 128px 0;
+}
+
+.our-team__title{
+  margin-bottom: 64px;
+}
+
+.our-team__generic{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(271px, 1fr));
+  gap: 56px 32px;
+  margin-bottom: 56px;
+}
+
+.our-team__item{
+  width: 100%;
+  text-align: center;
+}
+
+.our-team__item-img{
+  width: 127px;
+  height: 126px;
+  position: relative;
+  margin: 0 auto 18px;
+}
+
+.our-team__img{
+  width: 100%;
+  height: 100%;
+}
+.icon-linkedin{
+  position: absolute;
+  top: 93px;
+  left: 93.5px;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.our-team__item-line{
+  display:block;
+  width: 22px;
+  height: 2px;
+  background: #8492A5;
+  margin: 0 auto;
+}
+
+.our-team__item-name{
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 27px;
+  padding: 10px 0 6px;
+}
+
+.our-team__btn{
+  color: #FFF;
+  font-weight: 600;
+  padding: 12px 16px;
+  background: #231E41;
+  border: 1px solid #7553F0;
+  border-radius: 100px;
+  max-width: 172px;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
